@@ -1,6 +1,8 @@
 from pprint import pprint
 
+# Lesson index: https://pandas.pydata.org/pandas-docs/stable/tutorials.html under Lessons for new pandas users
 # Pandas exercises on https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/01%20-%20Lesson.ipynb
+
 
 # Import all libraries needed for the tutorial
 
