@@ -18,3 +18,6 @@ common hello world used in confirming git/github workflow from Visual Studio Cod
 
 ## pandas_exercise1.py
 going through common pandas exercises
+
+## pandas_exercise2.pu
+going through next set of exercises

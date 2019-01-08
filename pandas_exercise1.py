@@ -7,7 +7,7 @@ from pprint import pprint
 # General syntax to import specific functions in a library: 
 ## from (library) import (specific library function)
 
-from pandas import DataFRame, read_csv
+from pandas import DataFrame, read_csv
 
 # General syntax to import a library but no functions: 
 ##import (library) as (give the library a nickname/alias)
