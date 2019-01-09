@@ -18,6 +18,12 @@ common hello world used in confirming git/github workflow from Visual Studio Cod
 
 ## pandas_exercise1.py
 going through common pandas exercises
+https://pandas.pydata.org/pandas-docs/stable/tutorials.html
 
 ## pandas_exercise2.py
-going through next set of exercises
+CSV read/write, plotting
+https://pandas.pydata.org/pandas-docs/stable/tutorials.html
+
+# pandas_exercise3.py
+Reading/Writing excel, lambda functions, group by, plot and subplot, outlier removal
+https://pandas.pydata.org/pandas-docs/stable/tutorials.html
