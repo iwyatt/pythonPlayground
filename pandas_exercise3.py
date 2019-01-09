@@ -197,7 +197,7 @@ combined.tail()
 fig, axes = plt.subplots(figsize=(12, 7))
 combined['BHAG'].fillna(method='pad').plot(color='green', label='BHAG')
 combined['Max'].plot(color='blue', label='All Markets')
-plt.legend(loc='best');
+plt.legend(loc='best')
 plt.show()
 ### NOTE: I'm not 100% convinced this is the right visualization. It's the future goal? or attainment of past goals?
 
