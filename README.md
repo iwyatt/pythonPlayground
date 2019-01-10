@@ -32,5 +32,7 @@ https://pandas.pydata.org/pandas-docs/stable/tutorials.html
 Adding/deleting columns - Index operations
 https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/04%20-%20Lesson.ipynb
 
-
+## pandas_exercise5.py
+Review 'stack' and 'unstack' functions. Very useful 'transpose' function to swap rows and columns.
+https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/05%20-%20Lesson.ipynb
 
