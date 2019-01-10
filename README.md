@@ -24,11 +24,11 @@ https://pandas.pydata.org/pandas-docs/stable/tutorials.html
 CSV read/write, plotting
 https://pandas.pydata.org/pandas-docs/stable/tutorials.html
 
-# pandas_exercise3.py
+## pandas_exercise3.py
 Reading/Writing excel, lambda functions, group by, plot and subplot, outlier removal
 https://pandas.pydata.org/pandas-docs/stable/tutorials.html
 
-# pandas_exercise
+## pandas_exercise4.py
 Adding/deleting columns - Index operations
 https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/04%20-%20Lesson.ipynb
 
