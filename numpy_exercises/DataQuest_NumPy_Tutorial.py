@@ -143,4 +143,134 @@ earnings[:,0,0]
 earnings[:,0,:]
 
 # NumPy data types
-## Pick up here: https://www.dataquest.io/blog/numpy-tutorial-python/
+## check current data type (it's float64)
+wines.dtype
+
+
+## reimporting original wine matrix to get proper data
+wines = np.genfromtxt(url, delimiter=";", skip_header=1)
+
+#cast as integer
+wines.astype(int)
+## NOTE: the output numbers dont all match what is in the tutorial since we did some array options earlier in the lesson
+
+## cast and check the numpy datatype as opposed to the python data type
+int_wines = wines.astype(int)
+int_wines.dtype.name
+
+## also can convert to smaller data types than int64 like int32
+np.int32
+
+wines.astype(np.int32)
+
+# numpy array operations
+## add 10 points to each quality score and return new array
+wines[:11] + 10
+
+## or we can modify the array in-place:
+wines[:,11] += 10
+wines[:,11]
+
+## all operations work this way: 
+wines[:,11] * 2
+
+## can also do operations between arrays
+wines[:,11] + wines[:,11]
+
+## can multiple arrays as well
+wines[:,10] * wines[:,11]
+
+# Broadcasting
+
+## incompatible shapes:
+wines * np.array([1,2])
+
+## compatible shapes:
+array_one = np.array(
+    [
+        [1,2],
+        [3,4]
+    ]
+)
+array_two = np.array([4,5])
+
+## "add the contents of each shorter array, to each element of matching dimension size in the second array"
+array_one + array_two
+
+## example with wines data
+rand_array = np.random.rand(12)
+rand_array
+wines + rand_array
+
+## finds the sum of all the elements in an array by default
+wines[:,11].sum()
+
+## sum across an axis
+## axis=0 is confusing. The tutorial's explanation is:
+## If we call sum across the wines matrix, and pass in axis=0, we'll find the sums over the first axis of the array. This will give us the sum of all the values in every column. This may seem backwards that the sums over the first axis would give us the sum of each column, but one way to think about this is that the specified axis is the one "going away". So if we specify axis=0, we want the rows to go away, and we want to find the sums for each of the remaining axes across each row:
+wines.sum(axis=0)
+
+# can verify the shape
+wines.sum(axis=0).shape
+
+# axis = 1 will find sums over the second axis of the array, the sum of each row
+wines.sum(axis=1)
+
+# other functions that can operate on arrays like the sum method:
+# mean
+wines.mean(axis=1)
+# std
+wines.std(axis=0)
+# min
+wines.min(axis=1)
+# max
+wines.max(axis=0)
+
+# ArrayComparisons
+## check if any wines have quality rating above 5
+wines[:,11] > 5
+
+## check if any have quality equal to 10
+wines[:,11] == 10
+
+# Subsetting
+## select wines > 7
+high_quality = wines[:,11] > 7
+
+## do the subsetting on the data set
+wines[high_quality,:][:3,:]
+
+## multiple condition subsetting
+high_quality_and_alcohol = (wines[:,10] > 10) & (wines[:,11] > 7)
+wines[high_quality_and_alcohol,10:]
+
+## combine subsetting and assignment
+high_quality_and_alcohol = (wines[:,10] > 10) & (wines[:,11] > 7)
+wines[high_quality_and_alcohol,10:] = 20
+wines[high_quality_and_alcohol,10:]
+
+# Reshaping NumPy arrays
+## transpose the x and y
+np.transpose(wines).shape
+
+## ravel function turn array into one dimension (flatten)
+wines.ravel()
+
+## visible example:
+array_one = np.array(
+    [
+        [1, 2, 3, 4], 
+        [5, 6, 7, 8]
+    ]
+)
+
+array_one.ravel()
+
+## reshape function to reshape to a specified shape
+wines[1,:].reshape((2,6))
+wines[1,:].reshape((6,2))
+
+## Combining numpy arrays
+### Pick up here: https://www.dataquest.io/blog/numpy-tutorial-python/
+
+
