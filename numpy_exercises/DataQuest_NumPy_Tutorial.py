@@ -272,5 +272,4 @@ wines[1,:].reshape((6,2))
 
 ## Combining numpy arrays
 ### Pick up here: https://www.dataquest.io/blog/numpy-tutorial-python/
-
-
+### on section "Combining NumPy Arrays"
