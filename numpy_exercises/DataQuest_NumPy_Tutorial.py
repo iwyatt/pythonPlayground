@@ -148,6 +148,7 @@ wines.dtype
 
 
 ## reimporting original wine matrix to get proper data
+url = r'https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv'
 wines = np.genfromtxt(url, delimiter=";", skip_header=1)
 
 #cast as integer
@@ -271,5 +272,46 @@ wines[1,:].reshape((2,6))
 wines[1,:].reshape((6,2))
 
 ## Combining numpy arrays
-### Pick up here: https://www.dataquest.io/blog/numpy-tutorial-python/
-### on section "Combining NumPy Arrays"
+
+### read in the white wines
+url = r'https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv'
+white_wines = np.genfromtxt(url, delimiter=";", skip_header=1)
+white_wines.shape
+
+### reimport the red wines
+url = r'https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv'
+wines = np.genfromtxt(url, delimiter=";", skip_header=1)
+
+### use vstack to combine wines and white_wines NOTE: this is like adding rows to a table
+### or use hstack like adding columns to a table (no example)
+all_wines = np.vstack((wines, white_wines))
+all_wines.shape
+
+### numpy.concatenate as general purpose version of hstack and vstack
+### concatenating along first axis is like vstack, second axis is hstack
+np.concatenate((wines, white_wines), axis=0)
+
+### numpy array challenge
+### Create a 3 x 4 array filled with all zeros, and a 6 x 4 array filled with all 1s.
+### Concatenate both arrays vertically into a 9 x 4 array, with the all zeros array on top.
+### Assign the entire first column of the combined array to first_column.
+### Print out first_column.
+
+### Create a 3 x 4 array filled with all zeros, and a 6 x 4 array filled with all 1s.
+zeros_array = np.zeros((3,4))
+ones_array = np.zeros((6,4))
+ones_array[:,:] = 1
+zeros_array
+ones_array
+
+### Concatenate both arrays vertically into a 9 x 4 array, with the all zeros array on top.
+combined_arrays = np.vstack((zeros_array, ones_array))
+
+### Assign the entire first column of the combined array to first_column.
+first_column = combined_arrays[:,0]
+
+#Print out first_column
+print(first_column)
+
+
+
