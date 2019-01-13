@@ -40,7 +40,3 @@ letterone
 
 # index of above
 letterone.index
-
-
-
-
