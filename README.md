@@ -18,5 +18,3 @@ just a file to experiment with workflow
 
 ## helloworld.py
 common hello world used in confirming git/github workflow from Visual Studio Code
-
-

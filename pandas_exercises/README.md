@@ -28,3 +28,10 @@ https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/l
 ## pandas_exercise6.py
 GroupBy function
 http://nbviewer.ipython.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/06%20-%20Lesson.ipynb
+
+## pandas_exercise7.py
+Ways to calculate outliers
+https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/07%20-%20Lesson.ipynb
+- Uses lambda functions to calculate standard deviation, mean, and bool outlier in single line.(Method 2 and 2.5)
+- Has good example of .apply(function) for pandas dataframe objects (Method3)
+- Also has statistical test for non-normal distribution (Method4)
