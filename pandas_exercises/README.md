@@ -35,3 +35,8 @@ https://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/l
 - Uses lambda functions to calculate standard deviation, mean, and bool outlier in single line.(Method 2 and 2.5)
 - Has good example of .apply(function) for pandas dataframe objects (Method3)
 - Also has statistical test for non-normal distribution (Method4)
+
+## pandas_execise8.py
+Read from M$ SQL DB
+
+## pandas_exercise9.py
